@@ -1,0 +1,701 @@
+
+
+********************    Starting test_optimizable_1, optimize = False    ********************
+
+
+
+
+Dude. This takes 30 minutes. Trust me.
+
+
+
+
+********************    Starting test_optimizable_2, optimize = True    ********************
+
+
+People table metadata =
+ {
+  "table_name": "people",
+  "table_file": "../data/People.csv",
+  "column_definitions": [
+    {
+      "column_name": "playerID",
+      "column_type": "text",
+      "not_null": true
+    },
+    {
+      "column_name": "nameLast",
+      "column_type": "text",
+      "not_null": true
+    },
+    {
+      "column_name": "nameFirst",
+      "column_type": "text",
+      "not_null": false
+    },
+    {
+      "column_name": "birthCity",
+      "column_type": "text",
+      "not_null": false
+    },
+    {
+      "column_name": "birthCountry",
+      "column_type": "text",
+      "not_null": false
+    },
+    {
+      "column_name": "throws",
+      "column_type": "text",
+      "not_null": false
+    }
+  ]
+}
+Batting table metadata =
+ {
+  "table_name": "batting",
+  "table_file": "../data/Batting.csv",
+  "column_definitions": [
+    {
+      "column_name": "playerID",
+      "column_type": "text",
+      "not_null": true
+    },
+    {
+      "column_name": "H",
+      "column_type": "number",
+      "not_null": true
+    },
+    {
+      "column_name": "AB",
+      "column_type": "number",
+      "not_null": false
+    },
+    {
+      "column_name": "teamID",
+      "column_type": "text",
+      "not_null": true
+    },
+    {
+      "column_name": "yearID",
+      "column_type": "text",
+      "not_null": true
+    },
+    {
+      "column_name": "stint",
+      "column_type": "number",
+      "not_null": true
+    }
+  ]
+}
+Loaded people table =
+ table_name: people
+file_name../data/People.csv
+Row count 19370
+column_names: birthCity birthCountry nameFirst nameLast playerID throws
+index_names:pid_idx
+
+Loaded batting table =
+ table_name: batting
+file_name../data/Batting.csv
+Row count 102816
+column_names: AB H playerID stint teamID yearID
+index_names:
+
+Optimizing!!!
+{
+  "index_name": "pid_idx",
+  "columns": [
+    "playerID"
+  ],
+  "index_type": "INDEX"
+}
+optimize way 1: swap the two joined tables
+optimize way 2: first apply select on two tables
+processed rows 0
+processed rows 5000
+processed rows 10000
+processed rows 15000
+processed rows 20000
+processed rows 25000
+processed rows 30000
+processed rows 35000
+processed rows 40000
+processed rows 45000
+processed rows 50000
+processed rows 55000
+processed rows 60000
+processed rows 65000
+processed rows 70000
+processed rows 75000
+processed rows 80000
+processed rows 85000
+processed rows 90000
+processed rows 95000
+processed rows 100000
+Result =
+ [
+  {
+    "AB": "4",
+    "H": "0",
+    "playerID": "abercda01",
+    "stint": "1",
+    "teamID": "TRO",
+    "yearID": "1871",
+    "birthCity": "Fort Towson",
+    "birthCountry": "USA",
+    "nameFirst": "Frank",
+    "nameLast": "Abercrombie",
+    "throws": ""
+  },
+  {
+    "AB": "118",
+    "H": "32",
+    "playerID": "addybo01",
+    "stint": "1",
+    "teamID": "RC1",
+    "yearID": "1871",
+    "birthCity": "Port Hope",
+    "birthCountry": "CAN",
+    "nameFirst": "Bob",
+    "nameLast": "Addy",
+    "throws": "L"
+  },
+  {
+    "AB": "137",
+    "H": "40",
+    "playerID": "allisar01",
+    "stint": "1",
+    "teamID": "CL1",
+    "yearID": "1871",
+    "birthCity": "Philadelphia",
+    "birthCountry": "USA",
+    "nameFirst": "Art",
+    "nameLast": "Allison",
+    "throws": ""
+  },
+  {
+    "AB": "133",
+    "H": "44",
+    "playerID": "allisdo01",
+    "stint": "1",
+    "teamID": "WS3",
+    "yearID": "1871",
+    "birthCity": "Philadelphia",
+    "birthCountry": "USA",
+    "nameFirst": "Doug",
+    "nameLast": "Allison",
+    "throws": "R"
+  },
+  {
+    "AB": "120",
+    "H": "39",
+    "playerID": "ansonca01",
+    "stint": "1",
+    "teamID": "RC1",
+    "yearID": "1871",
+    "birthCity": "Marshalltown",
+    "birthCountry": "USA",
+    "nameFirst": "Cap",
+    "nameLast": "Anson",
+    "throws": "R"
+  },
+  {
+    "AB": "49",
+    "H": "11",
+    "playerID": "armstbo01",
+    "stint": "1",
+    "teamID": "FW1",
+    "yearID": "1871",
+    "birthCity": "Baltimore",
+    "birthCountry": "USA",
+    "nameFirst": "Robert",
+    "nameLast": "Armstrong",
+    "throws": ""
+  },
+  {
+    "AB": "4",
+    "H": "1",
+    "playerID": "barkeal01",
+    "stint": "1",
+    "teamID": "RC1",
+    "yearID": "1871",
+    "birthCity": "Lost Creek",
+    "birthCountry": "USA",
+    "nameFirst": "Al",
+    "nameLast": "Barker",
+    "throws": ""
+  },
+  {
+    "AB": "157",
+    "H": "63",
+    "playerID": "barnero01",
+    "stint": "1",
+    "teamID": "BS1",
+    "yearID": "1871",
+    "birthCity": "Mount Morris",
+    "birthCountry": "USA",
+    "nameFirst": "Ross",
+    "nameLast": "Barnes",
+    "throws": "R"
+  },
+  {
+    "AB": "5",
+    "H": "1",
+    "playerID": "barrebi01",
+    "stint": "1",
+    "teamID": "FW1",
+    "yearID": "1871",
+    "birthCity": "Baltimore",
+    "birthCountry": "USA",
+    "nameFirst": "Bill",
+    "nameLast": "Barrett",
+    "throws": ""
+  },
+  {
+    "AB": "86",
+    "H": "13",
+    "playerID": "barrofr01",
+    "stint": "1",
+    "teamID": "BS1",
+    "yearID": "1871",
+    "birthCity": "Hudson",
+    "birthCountry": "USA",
+    "nameFirst": "Frank",
+    "nameLast": "Barrows",
+    "throws": ""
+  }
+]
+Rows count =
+ 102815
+
+
+Elapsed time =  1.6912050247192383
+
+
+********************    Complete test_join_optimizable_2    ********************
+
+
+
+
+********************    Starting test_optimizable_3, optimize = True    ********************
+
+
+People table metadata =
+ {
+  "table_name": "people",
+  "table_file": "../data/People.csv",
+  "column_definitions": [
+    {
+      "column_name": "playerID",
+      "column_type": "text",
+      "not_null": true
+    },
+    {
+      "column_name": "nameLast",
+      "column_type": "text",
+      "not_null": true
+    },
+    {
+      "column_name": "nameFirst",
+      "column_type": "text",
+      "not_null": false
+    },
+    {
+      "column_name": "birthCity",
+      "column_type": "text",
+      "not_null": false
+    },
+    {
+      "column_name": "birthCountry",
+      "column_type": "text",
+      "not_null": false
+    },
+    {
+      "column_name": "throws",
+      "column_type": "text",
+      "not_null": false
+    }
+  ],
+  "index_definitions": [
+    {
+      "index_name": "pid_idx",
+      "columns": [
+        "playerID"
+      ],
+      "index_type": "INDEX"
+    }
+  ]
+}
+Batting table metadata =
+ {
+  "table_name": "batting",
+  "table_file": "../data/Batting.csv",
+  "column_definitions": [
+    {
+      "column_name": "playerID",
+      "column_type": "text",
+      "not_null": true
+    },
+    {
+      "column_name": "H",
+      "column_type": "number",
+      "not_null": true
+    },
+    {
+      "column_name": "AB",
+      "column_type": "number",
+      "not_null": false
+    },
+    {
+      "column_name": "teamID",
+      "column_type": "text",
+      "not_null": true
+    },
+    {
+      "column_name": "yearID",
+      "column_type": "text",
+      "not_null": true
+    },
+    {
+      "column_name": "stint",
+      "column_type": "number",
+      "not_null": true
+    }
+  ]
+}
+Loaded people table =
+ table_name: people
+file_name../data/People.csv
+Row count 19370
+column_names: birthCity birthCountry nameFirst nameLast playerID throws
+index_names:pid_idx
+
+Loaded batting table =
+ table_name: batting
+file_name../data/Batting.csv
+Row count 102816
+column_names: AB H playerID stint teamID yearID
+index_names:pid_idx
+
+Optimizing!!!
+{
+  "index_name": "pid_idx",
+  "columns": [
+    "playerID"
+  ],
+  "index_type": "INDEX"
+}
+optimize way 2: first apply select on two tables
+optimize way 3: if there is an index, use it
+Result =
+ [
+  {
+    "birthCity": "San Diego",
+    "birthCountry": "USA",
+    "nameFirst": "Ted",
+    "nameLast": "Williams",
+    "playerID": "willite01",
+    "throws": "R",
+    "AB": "565",
+    "H": "185",
+    "stint": "1",
+    "teamID": "BOS",
+    "yearID": "1939"
+  },
+  {
+    "birthCity": "San Diego",
+    "birthCountry": "USA",
+    "nameFirst": "Ted",
+    "nameLast": "Williams",
+    "playerID": "willite01",
+    "throws": "R",
+    "AB": "561",
+    "H": "193",
+    "stint": "1",
+    "teamID": "BOS",
+    "yearID": "1940"
+  },
+  {
+    "birthCity": "San Diego",
+    "birthCountry": "USA",
+    "nameFirst": "Ted",
+    "nameLast": "Williams",
+    "playerID": "willite01",
+    "throws": "R",
+    "AB": "456",
+    "H": "185",
+    "stint": "1",
+    "teamID": "BOS",
+    "yearID": "1941"
+  },
+  {
+    "birthCity": "San Diego",
+    "birthCountry": "USA",
+    "nameFirst": "Ted",
+    "nameLast": "Williams",
+    "playerID": "willite01",
+    "throws": "R",
+    "AB": "522",
+    "H": "186",
+    "stint": "1",
+    "teamID": "BOS",
+    "yearID": "1942"
+  },
+  {
+    "birthCity": "San Diego",
+    "birthCountry": "USA",
+    "nameFirst": "Ted",
+    "nameLast": "Williams",
+    "playerID": "willite01",
+    "throws": "R",
+    "AB": "514",
+    "H": "176",
+    "stint": "1",
+    "teamID": "BOS",
+    "yearID": "1946"
+  },
+  {
+    "birthCity": "San Diego",
+    "birthCountry": "USA",
+    "nameFirst": "Ted",
+    "nameLast": "Williams",
+    "playerID": "willite01",
+    "throws": "R",
+    "AB": "528",
+    "H": "181",
+    "stint": "1",
+    "teamID": "BOS",
+    "yearID": "1947"
+  },
+  {
+    "birthCity": "San Diego",
+    "birthCountry": "USA",
+    "nameFirst": "Ted",
+    "nameLast": "Williams",
+    "playerID": "willite01",
+    "throws": "R",
+    "AB": "509",
+    "H": "188",
+    "stint": "1",
+    "teamID": "BOS",
+    "yearID": "1948"
+  },
+  {
+    "birthCity": "San Diego",
+    "birthCountry": "USA",
+    "nameFirst": "Ted",
+    "nameLast": "Williams",
+    "playerID": "willite01",
+    "throws": "R",
+    "AB": "566",
+    "H": "194",
+    "stint": "1",
+    "teamID": "BOS",
+    "yearID": "1949"
+  },
+  {
+    "birthCity": "San Diego",
+    "birthCountry": "USA",
+    "nameFirst": "Ted",
+    "nameLast": "Williams",
+    "playerID": "willite01",
+    "throws": "R",
+    "AB": "334",
+    "H": "106",
+    "stint": "1",
+    "teamID": "BOS",
+    "yearID": "1950"
+  },
+  {
+    "birthCity": "San Diego",
+    "birthCountry": "USA",
+    "nameFirst": "Ted",
+    "nameLast": "Williams",
+    "playerID": "willite01",
+    "throws": "R",
+    "AB": "531",
+    "H": "169",
+    "stint": "1",
+    "teamID": "BOS",
+    "yearID": "1951"
+  },
+  {
+    "birthCity": "San Diego",
+    "birthCountry": "USA",
+    "nameFirst": "Ted",
+    "nameLast": "Williams",
+    "playerID": "willite01",
+    "throws": "R",
+    "AB": "10",
+    "H": "4",
+    "stint": "1",
+    "teamID": "BOS",
+    "yearID": "1952"
+  },
+  {
+    "birthCity": "San Diego",
+    "birthCountry": "USA",
+    "nameFirst": "Ted",
+    "nameLast": "Williams",
+    "playerID": "willite01",
+    "throws": "R",
+    "AB": "91",
+    "H": "37",
+    "stint": "1",
+    "teamID": "BOS",
+    "yearID": "1953"
+  },
+  {
+    "birthCity": "San Diego",
+    "birthCountry": "USA",
+    "nameFirst": "Ted",
+    "nameLast": "Williams",
+    "playerID": "willite01",
+    "throws": "R",
+    "AB": "386",
+    "H": "133",
+    "stint": "1",
+    "teamID": "BOS",
+    "yearID": "1954"
+  },
+  {
+    "birthCity": "San Diego",
+    "birthCountry": "USA",
+    "nameFirst": "Ted",
+    "nameLast": "Williams",
+    "playerID": "willite01",
+    "throws": "R",
+    "AB": "320",
+    "H": "114",
+    "stint": "1",
+    "teamID": "BOS",
+    "yearID": "1955"
+  },
+  {
+    "birthCity": "San Diego",
+    "birthCountry": "USA",
+    "nameFirst": "Ted",
+    "nameLast": "Williams",
+    "playerID": "willite01",
+    "throws": "R",
+    "AB": "400",
+    "H": "138",
+    "stint": "1",
+    "teamID": "BOS",
+    "yearID": "1956"
+  },
+  {
+    "birthCity": "San Diego",
+    "birthCountry": "USA",
+    "nameFirst": "Ted",
+    "nameLast": "Williams",
+    "playerID": "willite01",
+    "throws": "R",
+    "AB": "420",
+    "H": "163",
+    "stint": "1",
+    "teamID": "BOS",
+    "yearID": "1957"
+  },
+  {
+    "birthCity": "San Diego",
+    "birthCountry": "USA",
+    "nameFirst": "Ted",
+    "nameLast": "Williams",
+    "playerID": "willite01",
+    "throws": "R",
+    "AB": "411",
+    "H": "135",
+    "stint": "1",
+    "teamID": "BOS",
+    "yearID": "1958"
+  },
+  {
+    "birthCity": "San Diego",
+    "birthCountry": "USA",
+    "nameFirst": "Ted",
+    "nameLast": "Williams",
+    "playerID": "willite01",
+    "throws": "R",
+    "AB": "272",
+    "H": "69",
+    "stint": "1",
+    "teamID": "BOS",
+    "yearID": "1959"
+  },
+  {
+    "birthCity": "San Diego",
+    "birthCountry": "USA",
+    "nameFirst": "Ted",
+    "nameLast": "Williams",
+    "playerID": "willite01",
+    "throws": "R",
+    "AB": "310",
+    "H": "98",
+    "stint": "1",
+    "teamID": "BOS",
+    "yearID": "1960"
+  }
+]
+Rows count= 19
+
+
+Elapsed time =  0.000186920166015625
+
+
+********************    Complete test_join_optimizable_3    ********************
+
+
+
+
+********************    Starting test_optimizable_2, optimize = False    ********************
+
+
+People table metadata =
+ {
+  "table_name": "people",
+  "table_file": "../data/People.csv",
+  "column_definitions": [
+    {
+      "column_name": "playerID",
+      "column_type": "text",
+      "not_null": true
+    },
+    {
+      "column_name": "nameLast",
+      "column_type": "text",
+      "not_null": true
+    },
+    {
+      "column_name": "nameFirst",
+      "column_type": "text",
+      "not_null": false
+    },
+    {
+      "column_name": "birthCity",
+      "column_type": "text",
+      "not_null": false
+    },
+    {
+      "column_name": "birthCountry",
+      "column_type": "text",
+      "not_null": false
+    },
+    {
+      "column_name": "throws",
+      "column_type": "text",
+      "not_null": false
+    }
+  ]
+}
+Loaded people table =
+ table_name: people
+file_name../data/People.csv
+Row count 19370
+column_names: birthCity birthCountry nameFirst nameLast playerID throws
+index_names:nameLast_idx
+
+result =
+ 80
+
+Process finished with exit code 0

@@ -1,0 +1,23 @@
+playerID,birthYear,birthMonth,birthDay,birthCountry,birthState,birthCity,deathYear,deathMonth,deathDay,deathCountry,deathState,deathCity,nameFirst,nameLast,nameGiven,weight,height,bats,throws,debut,finalGame,retroID,bbrefID
+aardsda01,1981,12,27,USA,CO,Denver,,,,,,,David,Aardsma,David Allan,215,75,R,R,4/6/04,8/23/15,aardd001,aardsda01
+aaronha01,1934,2,5,USA,AL,Mobile,,,,,,,Hank,Aaron,Henry Louis,180,72,R,R,4/13/54,10/3/76,aaroh101,aaronha01
+aaronto01,1939,8,5,USA,AL,Mobile,1984,8,16,USA,GA,Atlanta,Tommie,Aaron,Tommie Lee,190,75,R,R,4/10/62,9/26/71,aarot101,aaronto01
+actama99,1969,1,11,D.R.,San Pedro de Macoris,San Pedro de Macoris,,,,,,,Manny,Acta,Manuel Elias,172,74,R,R,,,actam801,actama99
+adairbi99,1913,2,10,USA,AL,Mobile,2002,6,17,USA,AL,Bay Minette,Bill,Adair,Marion Danne,168,72,R,R,,,adaib801,adairbi99
+adairje01,1936,12,17,USA,OK,Sand Springs,1987,5,31,USA,OK,Tulsa,Jerry,Adair,Kenneth Jerry,175,72,R,R,9/2/58,5/3/70,adaij101,adairje01
+adairji01,1907,1,25,USA,TX,Waxahachie,1982,12,9,USA,TX,Farmers Branch,Jimmy,Adair,James Aubrey,154,70,R,R,8/24/31,9/7/31,adaij102,adairji01
+adamecr01,1991,7,26,D.R.,Distrito Nacional,Santo Domingo,,,,,,,Cristhian,Adames,Cristhian Pascual,185,72,B,R,7/29/14,4/28/17,adamc001,adamecr01
+adamsac01,1910,3,2,USA,CA,Willows,2006,2,26,USA,GA,Albany,Ace,Adams,Ace Townsend,182,70,R,R,4/15/41,4/24/46,adama101,adamsac01
+adamsau01,1986,8,19,USA,AL,Montgomery,,,,,,,Austin,Adams,Austin David,200,71,R,R,7/12/14,9/27/16,adama001,adamsau01
+adamsau02,1991,5,5,USA,FL,Tampa,,,,,,,Austin,Adams,Austin Lance,225,74,R,R,7/15/17,10/1/17,adama002,adamsau02
+adamsba01,1882,5,18,USA,IN,Tipton,1968,7,27,USA,MD,Silver Spring,Babe,Adams,Charles Benjamin,185,71,L,R,4/18/06,8/11/26,adamb104,adamsba01
+adamsbe01,1891,6,21,USA,TX,Wharton,1940,6,24,USA,CA,Los Angeles,Bert,Adams,John Bertram,185,73,B,R,8/30/10,9/28/19,adamb106,adamsbe01
+adamsbo01,1901,7,24,USA,MA,Holyoke,1996,10,17,USA,PA,Lemoyne,Bob,Adams,Robert Burnette,168,71,R,R,9/22/25,9/23/25,adamb107,adamsbo01
+adamsbo02,1907,1,20,USA,AL,Birmingham,1970,3,6,USA,FL,Jacksonville,Bob,Adams,Robert Andrew,165,72,R,R,9/27/31,9/17/32,adamb102,adamsbo02
+adamsbo03,1921,12,14,USA,CA,Tuolumne,1997,2,13,USA,WA,Gig Harbor,Bobby,Adams,Robert Henry,160,70,R,R,4/16/46,4/22/59,adamb103,adamsbo03
+adamsbo04,1952,1,6,USA,PA,Pittsburgh,,,,,,,Bob,Adams,Robert Melvin,200,74,R,R,7/10/77,9/29/77,adamb105,adamsbo04
+adamsbu01,1915,6,24,USA,CO,Trinidad,1990,9,1,USA,CA,Rancho Mirage,Buster,Adams,Elvin Clark,180,72,R,R,4/27/39,9/21/47,adamb101,adamsbu01
+adamsda01,1887,6,19,USA,MO,St. Louis,1964,10,6,USA,MO,St. Louis,Dan,Adams,Daniel Leslie,165,71,R,R,5/22/14,9/26/15,adamd103,adamsda01
+adamsda02,1987,5,15,USA,FL,Margate,,,,,,,David,Adams,David Lee,205,74,R,R,5/15/13,9/29/13,adamd001,adamsda02
+adamsdi01,1920,4,8,USA,CA,Tuolumne,2016,9,14,USA,CA,Fallbrook,Dick,Adams,Richard Leroy,185,72,R,L,5/20/47,9/28/47,adamd102,adamsdi01
+xt2323,1996,5,16,China,,Nanjing,,,,,,,,,,,,,,,,,

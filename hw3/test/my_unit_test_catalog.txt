@@ -1,0 +1,294 @@
+
+*********** Testing catalog create/drop table. *******************
+
+{
+  "table_name": "People",
+  "table_file": "../data/People.csv",
+  "column_definitions": [
+    {
+      "column_name": "playerID",
+      "column_type": "text",
+      "not_null": true
+    },
+    {
+      "column_name": "nameFirst",
+      "column_type": "text",
+      "not_null": true
+    },
+    {
+      "column_name": "birthYear",
+      "column_type": "number",
+      "not_null": false
+    }
+  ]
+}
+
+*********** Testing catalog table. *******************
+
+{
+  "table_name": "People",
+  "table_file": "../data/People.csv",
+  "column_definitions": [
+    {
+      "column_name": "birthYear",
+      "column_type": "number",
+      "not_null": "False"
+    },
+    {
+      "column_name": "nameFirst",
+      "column_type": "text",
+      "not_null": "True"
+    },
+    {
+      "column_name": "playerID",
+      "column_type": "text",
+      "not_null": "True"
+    }
+  ]
+}
+
+*********** Testing catalog add column. *******************
+
+{
+  "table_name": "People",
+  "table_file": "../data/People.csv",
+  "column_definitions": [
+    {
+      "column_name": "birthYear",
+      "column_type": "number",
+      "not_null": "False"
+    },
+    {
+      "column_name": "nameFirst",
+      "column_type": "text",
+      "not_null": "True"
+    },
+    {
+      "column_name": "playerID",
+      "column_type": "text",
+      "not_null": "True"
+    },
+    {
+      "column_name": "nameLast",
+      "column_type": "text",
+      "not_null": true
+    }
+  ]
+}
+
+*********** Testing catalog drop column. *******************
+
+{
+  "table_name": "People",
+  "table_file": "../data/People.csv",
+  "column_definitions": [
+    {
+      "column_name": "nameFirst",
+      "column_type": "text",
+      "not_null": "True"
+    },
+    {
+      "column_name": "playerID",
+      "column_type": "text",
+      "not_null": "True"
+    },
+    {
+      "column_name": "nameLast",
+      "column_type": "text",
+      "not_null": true
+    }
+  ]
+}
+
+*********** Testing catalog add primary key. *******************
+
+{
+  "table_name": "People",
+  "table_file": "../data/People.csv",
+  "column_definitions": [
+    {
+      "column_name": "nameFirst",
+      "column_type": "text",
+      "not_null": "True"
+    },
+    {
+      "column_name": "playerID",
+      "column_type": "text",
+      "not_null": "True"
+    },
+    {
+      "column_name": "nameLast",
+      "column_type": "text",
+      "not_null": true
+    }
+  ],
+  "index_definitions": [
+    {
+      "index_name": "playerID",
+      "columns": [
+        "playerID"
+      ],
+      "index_type": "PRIMARY"
+    }
+  ]
+}
+
+*********** Testing catalog add index. *******************
+
+{
+  "table_name": "People",
+  "table_file": "../data/People.csv",
+  "column_definitions": [
+    {
+      "column_name": "nameFirst",
+      "column_type": "text",
+      "not_null": "True"
+    },
+    {
+      "column_name": "playerID",
+      "column_type": "text",
+      "not_null": "True"
+    },
+    {
+      "column_name": "nameLast",
+      "column_type": "text",
+      "not_null": true
+    }
+  ],
+  "index_definitions": [
+    {
+      "index_name": "playerID",
+      "columns": [
+        "playerID"
+      ],
+      "index_type": "PRIMARY"
+    },
+    {
+      "index_name": "People_nameFirst_nameLast_index",
+      "columns": [
+        "nameFirst",
+        "nameLast"
+      ],
+      "index_type": "INDEX"
+    }
+  ]
+}
+
+*********** Testing catalog drop index. *******************
+
+{
+  "table_name": "People",
+  "table_file": "../data/People.csv",
+  "column_definitions": [
+    {
+      "column_name": "nameFirst",
+      "column_type": "text",
+      "not_null": "True"
+    },
+    {
+      "column_name": "playerID",
+      "column_type": "text",
+      "not_null": "True"
+    },
+    {
+      "column_name": "nameLast",
+      "column_type": "text",
+      "not_null": true
+    }
+  ],
+  "index_definitions": [
+    {
+      "index_name": "playerID",
+      "columns": [
+        "playerID"
+      ],
+      "index_type": "PRIMARY"
+    }
+  ]
+}
+
+*********** Testing catalog load table definition. *******************
+
+{
+  "table_name": "People",
+  "table_file": "../data/People.csv",
+  "column_definitions": [
+    {
+      "column_name": "nameFirst",
+      "column_type": "text",
+      "not_null": "True"
+    },
+    {
+      "column_name": "nameLast",
+      "column_type": "text",
+      "not_null": "True"
+    },
+    {
+      "column_name": "playerID",
+      "column_type": "text",
+      "not_null": "True"
+    }
+  ],
+  "index_definitions": [
+    {
+      "index_name": "playerID",
+      "columns": [
+        "playerID"
+      ],
+      "index_type": "PRIMARY"
+    }
+  ]
+}
+
+*********** Testing column def to JSON. *******************
+
+{
+  "column_name": "teamID",
+  "column_type": "text",
+  "not_null": true
+}
+
+*********** Testing index def to JSON. *******************
+
+{
+  "index_name": "INDEX_teamID_yearID",
+  "columns": [
+    {
+      "column_name": "teamID",
+      "column_type": "text",
+      "not_null": true
+    },
+    {
+      "column_name": "yearID",
+      "column_type": "text",
+      "not_null": true
+    }
+  ],
+  "index_type": "PRIMARY"
+}
+
+*********** Testing table def to JSON. *******************
+
+{
+  "table_name": "batting",
+  "table_file": "../data/Batting.csv",
+  "column_definitions": [
+    {
+      "column_name": "teamID",
+      "column_type": "text",
+      "not_null": true
+    },
+    {
+      "column_name": "yearID",
+      "column_type": "text",
+      "not_null": true
+    },
+    {
+      "column_name": "AB",
+      "column_type": "number",
+      "not_null": false
+    }
+  ]
+}
+
+Process finished with exit code 0

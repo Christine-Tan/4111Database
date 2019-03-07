@@ -1,0 +1,55 @@
+
+*******************************
+Test name =  Insert Test 1
+Row to insert =  {'playerID': 'dff1', 'nameLast': 'Ferguson', 'nameFirst': 'Donald'}
+Table name =  People
+Table file =  PeopleSmall.csv
+Table keys =  ['playerID']
+Exception =  Duplicate primary key
+
+
+*******************************
+Test name =  Find after insert 1
+Template =  {'nameLast': 'Ferguson'}
+Fields =  ['nameLast', 'nameFirst', 'birthMonth', 'birthYear']
+Table name =  People
+Table file =  PeopleSmall.csv
+Table keys =  ['playerID']
+Result table:
+Name: People:SELECT:PROJECT, File: None, No of rows: 1
+nameLast       nameFirst      birthMonth     birthYear
+Ferguson       Donald
+
+
+
+*******************************
+Test name =  Insert Test 2
+Row to insert =  {'playerID': 'dff1', 'nameLast': 'Ferguson', 'nameFirst': 'Donald'}
+Table name =  People
+Table file =  PeopleSmall.csv
+Table keys =  ['playerID']
+Exception =  Duplicate primary key
+OK. Did not insert duplicate key.
+
+
+*******************************
+Test name =  Insert Test 3
+Row to insert =  {'playerID': 'dff1', 'teamID': 'BOS', 'yearID': '2018', 'stint': '1', 'AB': '100', 'H': '100'}
+Table name =  Batting
+Table file =  BattingSmall.csv
+Table keys =  ['playerID', 'yearID', 'teamID', 'stint']
+Exception =  Duplicate primary key
+
+
+*******************************
+Test name =  Find after insert 3
+Template =  {'playerID': 'dff1'}
+Fields =  None
+Table name =  Batting
+Table file =  BattingSmall.csv
+Table keys =  ['playerID', 'yearID', 'teamID', 'stint']
+Result table:
+Name: Batting:SELECT, File: None, No of rows: 1
+playerID       yearID         stint          teamID         lgID           G              AB             R              H              2B             3B             HR             RBI            SB             CS             BB             SO             IBB            HBP            SH             SF             GIDP
+dff1           2018           1              BOS                                          100                           100
+

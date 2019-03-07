@@ -1,0 +1,198 @@
+/Users/Seven/DeveloperDownloads/python/Pycharm/bin/python /Users/Seven/Programming/Python-workspace/4111DB/hw3_xt2215/test/unit_test_catalog-2.py
+
+
+********************    Starting test_create_table_4_fail    ********************
+
+
+Exception e =  Invalid column HR
+
+
+********************    SUCCESS test_create_table_4_fail should fail.    ********************
+
+
+
+
+********************    Starting test_create_table_5_prep    ********************
+
+
+Batting table {
+  "table_name": "batting",
+  "table_file": "../data/Batting.csv",
+  "column_definitions": [
+    {
+      "column_name": "playerID",
+      "column_type": "text",
+      "not_null": true
+    },
+    {
+      "column_name": "teamID",
+      "column_type": "text",
+      "not_null": true
+    },
+    {
+      "column_name": "yearID",
+      "column_type": "text",
+      "not_null": true
+    },
+    {
+      "column_name": "stint",
+      "column_type": "number",
+      "not_null": true
+    },
+    {
+      "column_name": "H",
+      "column_type": "number",
+      "not_null": false
+    },
+    {
+      "column_name": "AB",
+      "column_type": "number",
+      "not_null": false
+    }
+  ],
+  "index_definitions": [
+    {
+      "index_name": "playerID_teamID_yearID_stint",
+      "columns": [
+        "playerID",
+        "teamID",
+        "yearID",
+        "stint"
+      ],
+      "index_type": "PRIMARY"
+    }
+  ]
+}
+
+
+********************    Completed test_create_table_5_prep    ********************
+
+
+
+
+********************    Starting test_create_table_5    ********************
+
+
+Initial status of table = 
+ {
+  "table_name": "batting",
+  "table_file": "../data/Batting.csv",
+  "column_definitions": [
+    {
+      "column_name": "AB",
+      "column_type": "number",
+      "not_null": "False"
+    },
+    {
+      "column_name": "H",
+      "column_type": "number",
+      "not_null": "False"
+    },
+    {
+      "column_name": "playerID",
+      "column_type": "text",
+      "not_null": "True"
+    },
+    {
+      "column_name": "stint",
+      "column_type": "number",
+      "not_null": "True"
+    },
+    {
+      "column_name": "teamID",
+      "column_type": "text",
+      "not_null": "True"
+    },
+    {
+      "column_name": "yearID",
+      "column_type": "text",
+      "not_null": "True"
+    }
+  ],
+  "index_definitions": [
+    {
+      "index_name": "playerID_teamID_yearID_stint",
+      "columns": [
+        "playerID",
+        "stint",
+        "teamID",
+        "yearID"
+      ],
+      "index_type": "PRIMARY"
+    }
+  ]
+}
+Modified status of table = 
+ {
+  "table_name": "batting",
+  "table_file": "../data/Batting.csv",
+  "column_definitions": [
+    {
+      "column_name": "AB",
+      "column_type": "number",
+      "not_null": "False"
+    },
+    {
+      "column_name": "H",
+      "column_type": "number",
+      "not_null": "False"
+    },
+    {
+      "column_name": "playerID",
+      "column_type": "text",
+      "not_null": "True"
+    },
+    {
+      "column_name": "stint",
+      "column_type": "number",
+      "not_null": "True"
+    },
+    {
+      "column_name": "teamID",
+      "column_type": "text",
+      "not_null": "True"
+    },
+    {
+      "column_name": "yearID",
+      "column_type": "text",
+      "not_null": "True"
+    },
+    {
+      "column_name": "HR",
+      "column_type": "number",
+      "not_null": false
+    },
+    {
+      "column_name": "G",
+      "column_type": "number",
+      "not_null": false
+    }
+  ],
+  "index_definitions": [
+    {
+      "index_name": "playerID_teamID_yearID_stint",
+      "columns": [
+        "playerID",
+        "stint",
+        "teamID",
+        "yearID"
+      ],
+      "index_type": "PRIMARY"
+    },
+    {
+      "index_name": "team_year_idx",
+      "columns": [
+        "teamID",
+        "yearID"
+      ],
+      "index_type": "INDEX"
+    }
+  ]
+}
+
+
+********************    Success test_create_table_5    ********************
+
+
+
+Process finished with exit code 0
